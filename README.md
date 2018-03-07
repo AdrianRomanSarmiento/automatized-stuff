@@ -1,7 +1,7 @@
 # automatized-stuff
 Python scripts to automate various tasks
 
-## Automatically checking your Email - toHotmailFirefox.py
+## Automatically checking your Email - toHotmail_Firefox.py
 Using Firefox, it opens the outlook webpage and introduces your email and password automatically.
 
 Notes:
