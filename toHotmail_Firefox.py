@@ -1,5 +1,5 @@
 #! python3
-# toHotmailFirefox.py - Automatically opens your Hotmail using Firefox
+# toHotmail_Firefox.py - Automatically opens your Hotmail using Firefox
 
 from selenium import webdriver
 import time
