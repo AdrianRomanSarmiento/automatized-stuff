@@ -1,9 +1,10 @@
 #! python3
 # pdfTools.py - Rotates, combines and reorders PDF files
-# Functions: rotation - Rotates 90, 180 or 270 degrees (clockwise) a specific page of a PDF. The output file is only the rotated page.
-#            rotation2 - Clockwise rotates a specific page of a PDF. The output file is the original file but with the rotated page in the same position.
-#            combination - Merges PDF documents into a single PDF file
-#            reorder - Reorders the pages of a PDF file in a desired order. Can be used to extract one page of a PDF file.
+# Functions: 
+#rotation - Rotates 90, 180 or 270 degrees (clockwise) a specific page of a PDF. The output file is only the rotated page.
+#rotation2 - Clockwise rotates a specific page of a PDF. The output file cotains the rotated page in the same position as the original.
+#combination - Merges PDF documents into a single PDF file.
+#reorder - Reorders the pages of a PDF file in a desired order. Can be used to extract one page of a PDF file.
 
 
 import PyPDF2
@@ -76,4 +77,4 @@ def reorder(filename, pagelist, outputname):
 rotation("example.pdf", 1, 90, "output.pdf")
 rotation2("example.pdf", 1, 90, "output.pdf")
 combination(["example_1.pdf", "example_2.pdf","example_3.pdf"],"output.pdf")
-reorder("example.pdf",[3, 6, 27], "output.pdf")
+reorder("example.pdf",[27, 6, 15], "output.pdf")
